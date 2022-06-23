@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeSpire", "FreeSpire\FreeSpire.csproj", "{CABA7534-957F-4A42-BF0B-31354C9CA595}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CABA7534-957F-4A42-BF0B-31354C9CA595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABA7534-957F-4A42-BF0B-31354C9CA595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABA7534-957F-4A42-BF0B-31354C9CA595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABA7534-957F-4A42-BF0B-31354C9CA595}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51151BB7-5CFC-4797-8FDC-A4D091ADB59B}
+	EndGlobalSection
+EndGlobal
