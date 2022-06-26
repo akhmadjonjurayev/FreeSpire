@@ -58,6 +58,34 @@ namespace FreeSpire
             {
                 Tags.Add(documentObject as StructureDocumentTag);
             }
+
+            else if (documentObject.DocumentObjectType == DocumentObjectType.Table)
+            {
+                foreach (Spire.Doc.TableRow row in (documentObject as Spire.Doc.Table).Rows)
+                {
+                    foreach (Spire.Doc.TableCell cell in row.Cells)
+                    {
+                        foreach (DocumentObject cellChild in cell.ChildObjects)
+                        {
+                            if (cellChild.DocumentObjectType == DocumentObjectType.StructureDocumentTag)
+                            {
+                                Tags.Add(cellChild as StructureDocumentTag);
+                            }
+                            else if (cellChild.DocumentObjectType == DocumentObjectType.Paragraph)
+                            {
+                                foreach (DocumentObject pobj in (cellChild as Paragraph).ChildObjects)
+                                {
+                                    if (pobj.DocumentObjectType == DocumentObjectType.StructureDocumentTagInline)
+                                    {
+                                        TagInlines.Add(pobj as StructureDocumentTagInline);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
         }
 
         public string GetSDTText(string tagName)
